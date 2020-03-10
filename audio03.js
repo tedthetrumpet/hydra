@@ -1,0 +1,33 @@
+a.show()
+
+a.setSmooth(0.5)
+
+osc(20, () => a.fft[0]/2, 0.5)
+  .scale(0.3)
+  .kaleid(8)
+  .rotate(() => a.fft[0]/4, 3)
+  .modulateScale(o0, 0.5)
+  .out()
+
+voronoi(() => a.fft[0] * 5 + 10, 0.1, 0.8)
+  .colorama( ()=> Math.sin(time)/4 )
+  .rotate(0.1,0.1)
+  .modulateScale(o1)
+  .out()
+
+gradient(()=> a.fft[0])
+  .scrollX( ()=> Math.tanh(time))
+  .scrollY( ()=> Math.tan(time/5))
+  .pixelate(7,19)
+  .modulateRotate(o1, 0.1)
+  // .modulateScale(o1, 0.4)
+  .out()
+
+shape(8, 0.1)
+  .scale( ()=> a.fft[0], 0.3, 0.1)
+  // .pixelate(23,19)
+  .colorama(()=> Math.sin(time)/5 + 0.3)
+  .scrollX( ()=> Math.tanh(time/7), 0.1)
+  // .scrollY( ()=> Math.tan(time/5), 0.2)
+  .modulateRotate(o1)
+  .out()

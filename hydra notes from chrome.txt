@@ -1,0 +1,31 @@
+// masking
+
+s0.initCam()
+
+src(s0).out(o0)
+
+osc(90,-0.1,0.1)	
+.layer(src(s0).mask(shape()))
+.out(o1)
+
+osc(20).out(o1)
+
+render(o1)
+
+//
+
+s0.initCam()
+
+src(s0).out(o0)
+
+osc(90,-0.1,0.1)	
+.layer(src(s0).mask(shape())).repeat()
+.out(o1)
+
+osc(20).out(o1)
+
+render(o1)
+
+//
+
+shape(3, () => mouse.x/1000).out() // or * by .0001
