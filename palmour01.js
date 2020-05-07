@@ -20,3 +20,5 @@ src(s0)
 .rotate(() => Math.sin(time/10),0.1)
 .modulateScale(s0)
 .out()
+
+hush()
