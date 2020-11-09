@@ -1,0 +1,12 @@
+WELCOME TO PIXELJAM
+This is a collaborative console for hydra synth. The three video buffers can be changed by writing code in the text boxes beneath them. All code is shared between everyone who is connected to the page.
+Press 'Enter' to execute your code.
+To join, enter your name (or scroll for more info):
+PIXELJAM is currently a work in progress, created by olivia as part of Festival Fotosíntesis 2019 in Medellin, Colombia.
+///////////////
+More info on usage:
+This editor uses the same functions and syntax as the hydra web editor, except that there are three text boxes, each one corresponding to output buffers o0, o1, and o2.
+
+There is no need to write '.out()' because the editor takes care of sending the code to the correct buffer. For example, 'osc().modulate(o0)' written in the middle box (o1), would use the left-hand buffer (o0) to modulate the middle buffer.
+
+I recommend trying the individual editor first if this is your first time using hydra! Feel free to ask questions or leave commnents in the forum :)

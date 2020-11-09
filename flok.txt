@@ -1,0 +1,28 @@
+voronoi(30,2,1)
+.colorama(0.3)
+.scrollX(1,0.15)
+.rotate(()=> Math.sin(time/4))
+.blend(o1)
+.modulate(o0)
+.out()
+
+shape(()=> Math.sin(time*4) * 20 - 23, [0.1,0.2,0.3])
+.scale(2,0.5)
+.scrollY(()=> Math.sin(time*2) / 16)
+.scrollX(()=> Math.sin(time*2.5) / 14)
+.modulate(o0)
+.out(o1)
+
+----------
+
+osc(30,0.02,()=> Math.sin(time))
+.rotate(1,0.09)
+.scrollY(1,0.03)
+.modulate(o0,0.1)
+.out()
+
+----------
+voronoi(3,0.2,9)
+  .colorama(0.1)
+  .modulateScale(o0,10)
+  .out()

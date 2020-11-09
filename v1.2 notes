@@ -1,0 +1,13 @@
+hydra-synth v1.2 is now online!
+
+some new things:
+- master clock to speed up or slow everything down or go in reverse
+- dynamically add new functions and edit the glsl (!)
+- dynamically control resolution and framerate
+- bundled version to use in webpages
+- screenshare in firefox and chrome with no extension needed
+- hush() to quiet everything
+- ctrl+shift+l to make a shareable link
+- smooth(), ease(), and fit() for arrays
+- s0.clear() to remove a source
+- update function called on each render update
