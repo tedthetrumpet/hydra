@@ -1,0 +1,65 @@
+https://twitter.com/_ojack_/status/1327007586713997312
+
+New things:
+- s0.initVideo() and s0.initImage() to make it easier to use videos
+- optimized for faster page load
+
+Fixed
+ rotate, scrollX, setResolution
+ 
+ 
+ voronoi(2, 0.4, () => Math.sin(time * 4) * 3)
+  .colorama(() => Math.sin(time / 2) * 2)
+  .rotate(1, 0.2)
+  .modulateScale(o0)
+  .out();
+
+
+osc(10, 0.2, 0.5)
+  .modulate(osc(9, 0.3, 0.5).rotate(1, 0.2))
+  .modulate(noise(2))
+   .scale(()=> Math.sin(time/90))
+   .modulateRotate(o0)
+  .out();
+
+voronoi(2, 0.1, 1)
+  .modulate(voronoi(3, 0.4, 4))
+  .modulate(osc(3, 0.4, 2))
+  .colorama(()=> Math.tan(time/7) / 5 + 1.4)
+  .modulatePixelate(o0,3)
+  .out();
+
+voronoi(2, 0.1, 1)
+  .modulate(voronoi(3, 0.4, 4))
+  .modulate(noise(3, 0.4, 2))
+  .colorama(()=> Math.sin(time/7) / 5 + 1.4)
+  //.modulatePixelate(o0,3)
+  .modulateRotate(o0)
+  .out();
+
+//CNDSD
+//http://malitzincortes.net/
+//crazy squares
+
+shape(4, (0.01, ()=> 0.2 + a.fft[2]),1)
+.mult(osc(1, 1).modulate(osc(5).rotate(1.4,1),3))
+.color(1,2,4)
+.saturate(0.2)
+.luma(1.2,0.05, (5, ()=> 2 + a.fft[3]))
+.scale(0.6, ()=> 0.9 + a.fft[3])
+.diff(o0)// o0
+.out(o0)// o1
+
+// by Olivia Jack
+// @_ojack_
+// [nice demo of moudulate parameter]
+
+osc(20, 0.01, 1.1)
+	.kaleid(5)
+	.color(2.83,0.91,0.39)
+	.rotate(0, 0.1)
+	.modulate(o0, () => mouse.x * 0.0003)
+	.scale(1.01)
+  	.out(o0)
+ 
+ 

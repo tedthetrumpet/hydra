@@ -1,19 +1,8 @@
-flok-repl -H wss://flok.clic.cf -s YzJkNzcxYjUtYzZjYi00ZGNkLWI0OWQtYzdjNTE3YTU0ZmVk -t tidal -N tedthetrumpet
-
--- 13 Dec, me, irisS, munshkr
--- apparently can revist the code!
-
-https://flok.clic.cf/s/NmI2Y2ZlZGUtMmY4OS00YmY4LTkxNTEtYmMwMzE0YTdmMWI4?layout=tidal,tidal,tidal,hydra
-
-
-
---------
-
 voronoi(30,2,1)
 .colorama(0.3)
 .scrollX(1,0.15)
 .rotate(()=> Math.sin(time/4))
-.blend(o1)
+//.blend(o1)
 .modulate(o0)
 .out()
 
