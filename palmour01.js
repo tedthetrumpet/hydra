@@ -4,7 +4,7 @@ vid.muted = true
 vid.loop = true
 s0.init({src: vid})
 
-vid.src = '/Volumes/Finty/movies/Sharing\ Palmour.mov'; vid.play()
+vid.src = '/Users/jsimon/Desktop/Finty/movies/Sharing\ Palmour.mov'; vid.play()
 
 vid.currentTime = 200;
 vid.currentTime = 0;

@@ -45,3 +45,4 @@ Sources
 s0.initScreen(0)
 s0.initCam(0)
 src(s0).out()
+a.show()

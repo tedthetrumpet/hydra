@@ -5,17 +5,18 @@ vid.loop = true
 s0.init({src: vid})
 vid.play() // seem to need this now
 
-vid.src = '/Volumes/Finty/movies/lcodemovies/bacteria_friend_and_foe_512kb.mp4'
+vid.src = '/Users/jsimon/Desktop/Finty/movies/lcodemovies/bacteria_friend_and_foe_512kb.mp4'
 
-vid.src = '/Volumes/Finty/movies/lcodemovies/2018\ wttc\ wt\ final\ 2\ DING\ Ning\ HIRANO\ Miu\ NA\ no\ sound\ 33mins\ 02.mov'
+vid.src = '/Users/jsimon/Desktop/Finty/movies/lcodemovies/2018\ wttc\ wt\ final\ 2\ DING\ Ning\ HIRANO\ Miu\ NA\ no\ sound\ 33mins\ 02.mov'; vid.play()
 
-vid.src = "/Volumes/Finty/movies/John\ Cage\ -\ Water\ Walk.mp4" // fab, keep, 9 mins
+vid.src = "/Users/jsimon/Desktop/Finty/movies/John\ Cage\ -\ Water\ Walk.mp4"; vid.play() // fab, keep, 9 mins
 
 vid.src = "/Volumes/Finty/movies/Sharing\ Palmour.mov"
 
 vid.src = "/Volumes/Finty/movies/lcodemovies/HowtheEye_edit.mov"
 
 src(s0).out(0) // just the vid
+solid().out()
 
 src(s0)  // ding-miu
   .rotate(() => a.fft[0]/4, 0.04) // angle, speed

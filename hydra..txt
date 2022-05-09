@@ -1,3 +1,9 @@
+A=()=>height/width
+shape(4,0.5).scale(1,A,1)
+
+
+
+
 -- meetup #3
 
 
